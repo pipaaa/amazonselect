@@ -1,32 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazon Select</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos CSS personalizados */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #232f3e;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+    }
+
+    #featured-products, #how-it-works, #all-products, #rights-reserved {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    #product-list, #product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .product p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .product button {
+      background-color: #f90;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #rights-reserved {
+      background-color: #232f3e;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Amazon Select</h1>
+    <h1>Bienvenido a Amazon Select</h1>
   </header>
   
   <section id="featured-products">
-    <h2>Featured Products</h2>
+    <h2>Productos Destacados</h2>
     <div id="product-list"></div>
   </section>
 
   <section id="how-it-works">
-    <h2>How Amazon Select Works</h2>
+    <h2>Cómo funciona Amazon Select</h2>
     <p>...</p>
   </section>
 
   <section id="all-products">
-    <h2>All Products</h2>
+    <h2>Todos los Productos</h2>
     <div id="filter-options">
-      <!-- Filter options here (price, product type, etc.) -->
+      <!-- Opciones de filtrado aquí (precio, tipo de producto, etc.) -->
     </div>
     <div id="product-grid"></div>
+  </section>
+
+  <section id="rights-reserved">
+    <p>Todos los derechos reservados &copy; 2023 Amazon Select</p>
   </section>
 
   <script src="script.js"></script>
